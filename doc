@@ -1,0 +1,26 @@
+Pong objectifs:
+
+	Gestion du score
+	Gestion d'une IA avec prise en compte de la difficulté
+	Effet sonore qu'on peut "mute" à travers le menu dans les options
+	Gestion de partie en réseau en LAN ou à travers internet
+	Effet graphique basique à base forme (rectangle et carré)
+
+Gameplay :
+
+	On peut bouger les raquetes de haut en bas
+	La balle sera renvoyé selon la zone d'impact sur la raquette, c'est l'utilisateur qui choisit en quelque sorte ou va partir la balle
+	Augmentation de la vitesse au fur et à mesure
+	Match fini au bout de N point (à fixer)
+
+Technique : 
+
+	Scons pour la construction du projet
+	Git pour le versionning
+	OpenAL pour le son
+	FTGL pour le texte
+	GLFW pour les fonction utilitaire et le fenetrage
+	OpenGL pour le rendu graphique
+	Boost.Asio pour le réseau
+
+	Boost pour le reste aussi (Shared_ptr, etc.)
