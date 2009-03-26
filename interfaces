@@ -1,0 +1,55 @@
+Application: Singleton
+	
+	void initialize();
+	void run();
+	void destroy();
+
+SceneManager:
+
+	void addNode(Node* node, const::string& name)
+	void removeNode(const::string& name);
+	void removeNode(Node* node)
+	Node* getNode(const::string& name)
+	void removeAll()
+	void renderer()
+
+Node:
+
+	void setPosition(vector2)
+	vector2 getPosition()
+    void setOrientation(vector2)
+	vector2 getOrientation()
+	void renderer()
+
+
+StateManager:
+
+	void push(State* state)
+	void pop()
+	State* getCurrentState()
+
+IState : tout virtual pure
+
+	void enter()
+	void exit()
+	void run()
+
+MessageModule
+
+	void init()
+	void destroy()
+	void postMessage(IMessage*)
+	void processMessage(IMessage*)
+	void processPendingMessages()
+
+GraphicModule
+
+	void init()
+	void destroy()
+	vector2 getWindowSize()
+
+
+InputManager
+
+	void init()
+	void destroy()
